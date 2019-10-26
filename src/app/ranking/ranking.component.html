@@ -1,6 +1,51 @@
+
+
 <p>ranking works!</p>
 
-<div style="width: 40%;">
+<iframe src="https://app.powerbi.com/view?r=eyJrIjoiNmIwMWE4NzAtYjI2ZC00MzI2LWEyYTMtZDUwNDA3Mzc4NWRlIiwidCI6ImUyZDlmOGVlLTEzNTctNGU4OS05NmNjLTA5MGVhNGI1MzZhNSIsImMiOjl9" width="100%" height="1240p" frameborder="0"></iframe>
+
+<div class="vbox">
+
+
+
+  <mat-card class="confirm-match">
+    <mat-card-header>
+      <h2>Match-ID:</h2>
+      <mat-form-field class="mat-form-field">
+        <textarea matInput></textarea>
+      </mat-form-field>
+    </mat-card-header>
+
+    <mat-card-content>
+      <h2>Message to Fellow:</h2>
+      <mat-form-field>
+        <textarea matInput >Hello Fellow please confirm your match.</textarea>
+      </mat-form-field>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="match()" class="btn btn-primary">Confirm Match & Send Mail</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<!--<div style="width: 40%;">
   <canvas
     baseChart
     [chartType]="'bar'"
@@ -10,13 +55,13 @@
     [legend]="true"
     (chartClick)="onChartClick($event)">
   </canvas>
-</div>
+</div>-->
 
 <p>test test</p>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<!--<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-  <!-- Checkbox Column -->
+
   <ng-container matColumnDef="select">
     <th mat-header-cell *matHeaderCellDef>
       <mat-checkbox (change)="$event ? masterToggle() : null"
@@ -34,19 +79,16 @@
     </td>
   </ng-container>
 
-  <!-- Position Column -->
   <ng-container matColumnDef="position">
     <th mat-header-cell *matHeaderCellDef> No. </th>
     <td mat-cell *matCellDef="let element"> {{element.Bewerbernummer}} </td>
   </ng-container>
 
-  <!-- Name Column -->
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
     <td mat-cell *matCellDef="let element"> {{element.Anrede}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
   <ng-container matColumnDef="weight">
     <th mat-header-cell *matHeaderCellDef> Weight </th>
     <td mat-cell *matCellDef="let element"> {{element.Accountname}} </td>
@@ -57,4 +99,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"
       (click)="selection.toggle(row)">
   </tr>
-</table>
+</table>-->
