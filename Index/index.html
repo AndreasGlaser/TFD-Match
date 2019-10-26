@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TFD-Match</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<img src="Header.png">
+
+<iframe src="https://app.powerbi.com/view?r=eyJrIjoiNmIwMWE4NzAtYjI2ZC00MzI2LWEyYTMtZDUwNDA3Mzc4NWRlIiwidCI6ImUyZDlmOGVlLTEzNTctNGU4OS05NmNjLTA5MGVhNGI1MzZhNSIsImMiOjl9" width="1800px" height="1000pt" frameborder="0"></iframe>
+
+<div class="container-fluid div">
+
+
+
+  <mat-card class="align-self-center">
+    <mat-card-header>
+      <h2>Suggest Matches</h2>
+        <div class="form-group padding">
+          <label for="matchid">Match-ID:</label>
+          <input type="text" onchange="function matchid() {
+            console.log($('#matchid').val());
+              if($('#matchid').val() == 'dummy') {
+                  $('#fellowName').val('testname');
+              }
+          }
+          matchid()" class="form-control" width="200p" id="matchid" aria-describedby="emailHelp" placeholder="Enter Match-ID">
+        </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+      <select class="custom-select" id="inputGroupSelect03">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    </mat-card-content>
+
+    <div class="form-group padding">
+      <label for="matchid">Fellow Name (Please Check)</label>
+      <input type="text" class="form-control" width="200p" id="fellowName" aria-describedby="emailHelp" placeholder="Fellow Name">
+    </div>
+    <mat-card-actions>
+      <button class="btn btn-primary padding popup" onclick="myFunction()">Confirm Match & Send Mail<span class="popuptext" id="myPopup">Email gesendet.</span></button>
+         </mat-card-actions>
+  </mat-card>
+
+</div>
+
+<img src="Impressum.png">
+<script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
