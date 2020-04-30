@@ -26,7 +26,7 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.0",
     "emailjs-smtp-client": "^2.0.1",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "ng": "0.0.0",
     "ng2-charts": "^2.3.0",
     "popper.js": "^1.16.0",
