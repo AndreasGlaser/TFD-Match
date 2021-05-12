@@ -24,7 +24,7 @@
     "@angular/router": "~8.2.11",
     "@ng-bootstrap/ng-bootstrap": "^5.1.2",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.9.0",
+    "chart.js": "^2.9.4",
     "emailjs-smtp-client": "^2.0.1",
     "jquery": "^1.9.1",
     "ng": "0.0.0",
